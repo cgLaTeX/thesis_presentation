@@ -11,12 +11,43 @@
 			<div class="slides">
 
 				<section>
-					<h1>Generic Thesis Title</h1>
-					<h2>By Connor Glosser</h2>
+					<h1>Comments suck.</h1>
 				</section>
 
 				<section>
-					\[ i \hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla \psi + U \psi \]
+					<h3>Comments <em>are evil.</em></h3>
+				</section>
+
+				<section data-background-image="images/lego.jpg"></section>
+
+				<section data-background-image="images/Palpatine.jpg">
+						<span class="fragment fade-in">
+							<h6>
+								Don't let them tempt you to the <span class="fragment highlight-red">dark side</span>.
+							</h6>
+						</span>
+				</section>
+
+				<section>
+					<h4>Why do we comment?</h4>
+					<pre><code data-trim class="c++">void PredictorCorrector::Integrator::solve() const
+{
+  for(int step = 0; step < time_idx_ubound; ++step) {
+    solve_step(step);
+
+    # Report simulation progress in 10% increments on stdout
+    if(step % (time_idx_ubound / 10) == 0) {
+      std::cout << "\t" << static_cast&lt;double&gt;(step) / time_idx_ubound
+                << std::endl;
+    }
+
+    # Abort simulation if NaN/+-inf detected
+    if(!all_finite(step)) {
+        const std::string msg = "unbounded history values at or before step ";
+        throw std::domain_error(msg + std::to_string(step));
+    }
+  }
+}</code></pre>
 				</section>
 
 			</div>
