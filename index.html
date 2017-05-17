@@ -1,0 +1,45 @@
+<html>
+	<head>
+
+		<script
+			type="text/javascript"
+		  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+
+		<link rel="stylesheet" href="revealjs/css/reveal.css">
+		<link rel="stylesheet" href="revealjs/css/theme/blood.css">
+		<link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>Generic Thesis Title</h1>
+					<h2>By Connor Glosser</h2>
+				</section>
+
+				<section>
+					\[ i \hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla \psi + U \psi \]
+				</section>
+
+			</div>
+		</div>
+
+		<script src="revealjs/lib/js/head.min.js"></script>
+		<script src="revealjs/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				history: true,
+				transition: 'convex',
+				backgroundTransition: 'convex',
+				dependencies: [
+					{ src: 'revealjs/plugin/notes/notes.js', async: true },
+					{ src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+
+	</body>
+</html>
