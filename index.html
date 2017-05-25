@@ -20,10 +20,32 @@
 				</section>
 
 				<section>
-					<h4>The Liouville equation</h4>
-					\[ \frac{\partial \hat{\rho}}{\partial t} = \frac{-i}{\hbar} \left[ \hat{\mathcal{H}}, \hat{\rho} \right]
+				<section>
+					<section>
+						<h4>The Liouville equation</h4>
+						\[ \frac{\partial \hat{\rho}}{\partial t} = \frac{-i}{\hbar} \left[ \hat{\mathcal{H}}(t), \hat{\rho} \right]
                                                			- \hat{\mathcal{D}}[\hat{\rho}]
-					\]
+						\]
+						<aside class="notes">
+							<ul>
+								<li>Extension of Schrodinger eqn. for mixed states</li>
+								<li>Allows T1, T2 decay times </li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						\[ \hat{\mathcal{H}}(t) = \begin{pmatrix}
+							0 & \hbar \chi(t) \\
+							\hbar \chi^*(t) & \hbar \omega_0
+							\end{pmatrix}
+						\]
+						<br/>
+						\[ \hat{\mathcal{D}}[\hat{\rho}] = \begin{pmatrix}
+							(\rho_{00} - 1)/T_1 & \rho_{01}/T_2 \\
+							\rho_{10}/T_2 & \rho_{11}/T_1
+							\end{pmatrix}
+						\]
+					</section>
 				</section>
 
 			</div>
